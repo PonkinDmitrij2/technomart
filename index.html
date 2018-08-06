@@ -5,55 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Интернет магазин Technomart</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="page-wrapeer">
     <header class="page-header">
       <div class="page-header__top">
         <div class="container">
-          <div class="page-header__logo">
-            <a class="logo">Техномарт</a>
-          </div>
-          <div class="page-header__search">
-            <div class="search">
-              <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
-                <input class="search__field-text" type="text" name="search" placeholder="Поиск:">
-                <button class="search__btn" type="submit" title="Поиск">
-                  <span class="search__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path fill="#fff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-                  </span>
-                  <span class="visually-hidden">Поиск</span>
-                </button>
-              </form>
+          <div class="page-header__layout">
+            <div class="page-header__logo">
+              <a class="logo">Техномарт</a>
             </div>
-          </div>
-          <div class="page-header__menu">
-            <ul class="user-nav">
-              <li class="user-nav__item">
-                <a class="user-nav__link  user-nav__link--iconic  user-nav__link--bookmarks" href="javascript:void(0)">
-                  <span class="user-nav__link-text">Закладки:</span>
-                  <span class="user-nav__link-count">0</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a class="user-nav__link  user-nav__link--iconic  user-nav__link--cart" href="javascript:void(0)">
-                  <span class="user-nav__link-text">Корзина:</span>
-                  <span class="user-nav__link-count">0</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a class="user-nav__link  user-nav__link--order" href="javascript:void(0)">
-                  <span class="user-nav__link-text">Оформить заказ</span>
-                </a>
-              </li>
-            </ul>
+            <div class="page-header__search">
+              <div class="search">
+                <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
+                  <input class="search__field-text" type="text" name="search" placeholder="Поиск:">
+                  <button class="search__submit" type="submit" title="Поиск">
+                    <span class="search__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path fill="#fff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                    </span>
+                    <span class="visually-hidden">Поиск</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="page-header__menu">
+              <ul class="user-nav">
+                <li class="user-nav__item">
+                  <a class="user-nav__link  user-nav__link--iconic  user-nav__link--bookmarks" href="javascript:void(0)">
+                    <span class="user-nav__link-text">Закладки:</span>
+                    <span class="user-nav__link-count">0</span>
+                  </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link  user-nav__link--active  user-nav__link--iconic  user-nav__link--cart" href="javascript:void(0)">
+                    <span class="user-nav__link-text">Корзина:</span>
+                    <span class="user-nav__link-count">10</span>
+                  </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link  user-nav__link--order" href="javascript:void(0)">
+                    <span class="user-nav__link-text">Оформить заказ</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row  page-header__row">
           <div class="col-4">
-            <p class="page-header__descr">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p class="page-header__descr">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
           </div>
           <div class="col-4">
             <div class="page-header__contacts">
@@ -63,7 +68,7 @@
           </div>
           <div class="col-4">
             <div class="user">
-              <ul class="user__list">
+              <ul class="user__list  user__list--unauthorized">
                 <li class="user__item">
                   <a class="user__link  user__link--login" href="javascript:void(0)">
                     <span class="user__icon">
@@ -73,7 +78,7 @@
                   </a>
                 </li>
                 <li class="user__item">
-                  <a class="user__link  user__link--registration" href="javascript:void(0)">
+                  <a class="user__link  user__link--authorized" href="javascript:void(0)">
                     <span class="user__text">Регистрация</span>
                   </a>
                 </li>
@@ -88,20 +93,20 @@
                   </a>
                 </li>
                 <li class="user__item">
-                  <a class="user__link  user__link--logout" href="javascript:void(0)">
+                  <a class="user__link  user__link--logout" href="javascript:void(0)" title="Выход">
                     <span class="user__icon">
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17"><g fill="#c5c5c5"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
                     </span>
                     <span class="visually-hidden">Выход</span>
                   </a>
                 </li>
-                <li class="user__item">
+                <li class="user__item  user__item--offset">
                   <a class="user__link  user__link--my-orders" href="javascript:void(0)">
                     <span class="user__text">Мои заказы</span>
                   </a>
                 </li>
-                <li class="user__item">
-                  <a class="user__link  user__link--private-office" href="javascript:void(0)">
+                <li class="user__item  user__item--offset">
+                  <a class="user__link  user__link--cabinet" href="javascript:void(0)">
                     <span class="user__text">Личный кабинет</span>
                   </a>
                 </li>
@@ -112,25 +117,39 @@
         <nav class="main-nav">
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link  site-nav__link--active">Главная</a>
+              <a class="site-nav__link  site-nav__link--active">
+                <span class="site-nav__text">Главная</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Компания</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Компания</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Каталог</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Каталог</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Новости</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Новости</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Спецпредложения</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Спецпредложения</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Доставка</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Доставка</span>
+              </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Контакты</a>
+              <a class="site-nav__link" href="javascript:void(0)">
+                <span class="site-nav__text">Контакты</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -434,33 +453,51 @@
             <div class="page-footer__links">
               <ul class="site-nav  site-nav--page-footer">
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Компания</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Компания</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Новости</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Новости</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Каталог</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Каталог</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Доставка</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Доставка</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Контакты</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Контакты</span>
+                  </a>
                 </li>
               </ul>
               <ul class="site-nav  site-nav--page-footer  site-nav--page-footer-colored">
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Материалы</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Материалы</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Техника</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Техника</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Инструмент</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Инструмент</span>
+                  </a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="javascript:void(0)">Спецпредложения</a>
+                  <a class="site-nav__link" href="javascript:void(0)">
+                    <span class="site-nav__text">Спецпредложения</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -471,7 +508,7 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <p class="page-footer__copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+              <p class="page-footer__copyright">&copy; 2010–2017 Компания «Техномарт» Все права защищены</p>
             </div>
             <div class="col-4">
               <div class="page-footer__socials">
