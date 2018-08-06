@@ -1,0 +1,759 @@
+/* ========================================
+   $COMMON
+   ======================================== */
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul.row {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+
+/* ========== visually-hidden ========== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+/* ========================================
+   $BTN
+   ======================================== */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 9px 30px;
+  border: 1px solid #ee3643;
+  font: inherit;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s linear;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #ca2c37;
+  border-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+  border-color: #ba2732;
+}
+
+.btn--transparent {
+  color: #48974c;
+  background-color: transparent;
+}
+
+.btn--transparent:hover,
+.btn--transparent:focus {
+  color: #ffffff;
+}
+
+
+
+/* ========================================
+   $GRID-SYSTEM
+   ======================================== */
+.container {
+  width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+.offset-2 {
+  margin-left: 16.666667%;
+}
+
+.offset-3 {
+  margin-left: 25%;
+}
+
+.offset-4 {
+  margin-left: 33.333333%;
+}
+
+.offset-5 {
+  margin-left: 41.666667%;
+}
+
+.offset-6 {
+  margin-left: 50%;
+}
+
+.offset-7 {
+  margin-left: 58.333333%;
+}
+
+.offset-8 {
+  margin-left: 66.666667%;
+}
+
+.offset-9 {
+  margin-left: 75%;
+}
+
+.offset-10 {
+  margin-left: 83.333333%;
+}
+
+.offset-11 {
+  margin-left: 91.666667%;
+}
+
+
+
+/* ========================================
+   $PAGE-HEADER
+   ======================================== */
+.page-header {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  background-color: #f4f7f9;
+}
+
+.page-header__top {
+  margin-bottom: 46px;
+  color: #fff;
+  background-color: #293449;
+}
+
+.page-header__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  flex: 0 0 23.4%;
+  max-width: 23.4%;
+}
+
+
+
+/* ========================================
+   $LOGO
+   ======================================== */
+.logo {
+  display: block;
+  padding: 5.5px 30px;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #c23f42;
+}
+
+
+
+.page-header__search {
+  flex: 0 0 28.7%;
+  max-width: 28.7%;
+}
+
+
+
+/* ========================================
+   $SEARCH
+   ======================================== */
+.search {
+  position: relative;
+}
+
+.search__field-text {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 20px 10px 48px;
+  border: none;
+  font: inherit;
+  font-size: 17px;
+  color: #fff;
+  background-color: inherit;
+}
+
+.search__field-text::placeholder {
+  color: #fff;
+}
+
+.search__field-text:hover {
+  background-color: #212a3a;
+}
+
+.search__field-text:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.search__field-text:focus::placeholder {
+  color: #000;
+}
+
+.search__submit {
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.search__icon {
+  display: block;
+}
+
+.search__icon svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search__field-text:hover + .search__submit,
+.search__field-text:focus + 
+.search__submit,
+.search__submit:hover,
+.search__submit:focus {
+  opacity: 1;
+}
+
+.search__field-text:focus + 
+.search__submit path {
+  fill: #ee3643;
+}
+
+
+
+.page-header__menu {
+  flex: 0 0 47.8%;
+  max-width: 47.8%;
+}
+
+
+
+/* ========================================
+   $USER-NAV
+   ======================================== */
+.user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.user-nav__item {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.user-nav__link {
+  display: block;
+  padding: 10px 18px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-nav__link--iconic {
+  position: relative;
+  padding-left: 36px;
+}
+
+.user-nav__link--iconic::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 16px;
+  height: 16px;
+}
+
+.user-nav__link--bookmarks::before {
+  left: 17px;
+  background: url("../img/bg/icon-bookmark.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.user-nav__link--cart::before {
+  background: url("../img/bg/icon-cart.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.user-nav__link--bookmarks:hover,
+.user-nav__link--bookmarks:focus,
+.user-nav__link--cart:hover,
+.user-nav__link--cart:focus {
+  background-color: #212a3a;
+}
+
+.user-nav__link--bookmarks:hover::before,
+.user-nav__link--bookmarks:focus::before,
+.user-nav__link--cart:hover::before,
+.user-nav__link--cart:focus::before {
+  opacity: 1;
+}
+
+.user-nav__link--bookmarks:active,
+.user-nav__link--cart:active {
+  background-color: #161d29;
+}
+
+.user-nav__link--bookmarks:active::before,
+.user-nav__link--cart:active::before {
+  opacity: 0.5;
+}
+
+.user-nav__link--order {
+  background-color: #63a63e;
+}
+
+.user-nav__link--order:hover,
+.user-nav__link--order:focus {
+  background-color: #5fbb2d;
+}
+
+.user-nav__link--order:active {
+  background-color: #518534;
+}
+
+.user-nav__link--bookmarks:active .user-nav__link-text,
+.user-nav__link--bookmarks:active .user-nav__link-count,
+.user-nav__link--cart:active .user-nav__link-text,
+.user-nav__link--cart:active .user-nav__link-count,
+.user-nav__link--order:active .user-nav__link-text {
+  opacity: 0.5;
+}
+
+.user-nav__link--active {
+  background-color: #ee3643;
+}
+
+
+
+.page-header__row {
+  margin-bottom: 40px;
+}
+
+.page-header__descr {
+  margin: 0;
+  padding-left: 52px;
+  padding-top: 3px;
+  padding-right: 45px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.page-header__contacts {
+  padding-right: 30px;
+}
+
+.page-header__phone {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 7px 50px;
+  padding-left: 70px;
+  border: 3px solid #fff;
+  font-size: 21px;
+  line-height: 1.2;
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.page-header__phone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/bg/icon-phone.svg") 0 0 no-repeat;
+}
+
+.page-header__address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  color: #32425c;
+}
+
+
+
+/* ========================================
+   $USER
+   ======================================== */
+.user__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.user__list--unauthorized {
+  margin-left: 19px;
+}
+
+.user__list--unauthorized .user__item:first-child {
+  margin-right: auto;
+}
+
+.user__item--offset {
+  position: relative;
+  padding: 6px 18px;
+  padding-right: 0;
+}
+
+.user__item--offset + 
+.user__item--offset {
+  padding-left: 32px;
+}
+
+.user__item--offset + 
+.user__item--offset::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+}
+
+.user__link {
+  display: block;
+  padding: 9px 25px 10px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.user__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  margin-right: 7px;
+}
+
+.user__icon svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user__text {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user__link:hover,
+.user__link:focus {
+  color: #ee3643;
+}
+
+.user__link--profile:hover,
+.user__link--profile:focus {
+  color: #000;
+}
+
+.user__link:hover path,
+.user__link:focus path {
+  fill: #32425c;
+}
+
+.user__link:active .user__text {
+  color: #000;
+  opacity: 0.3;
+}
+
+.user__link:active path {
+  fill: #c5c5c5;
+}
+
+.user__link--login {
+  padding-left: 14px;
+}
+
+.user__link--profile {
+  padding-left: 14px;
+}
+
+.user__link--logout {
+  padding-left: 12px;
+  padding-right: 11px;
+  padding-bottom: 11px;
+}
+
+.user__link--logout .user__icon {
+  margin: 0;
+}
+
+.user__link--my-orders,
+.user__link--cabinet {
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  background-color: transparent;
+}
+
+.user__link--my-orders .user__text::after,
+.user__link--cabinet .user__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  height: 1px;
+  background-color: #32425c;
+}
+
+.user__link--my-orders:hover .user__text::after,
+.user__link--my-orders:focus .user__text::after,
+.user__link--cabinet:hover .user__text::after,
+.user__link--cabinet:focus .user__text::after {
+  background-color: #ee3643;
+}
+
+.user__link--my-orders:active .user__text::after,
+.user__link--cabinet:active .user__text::after {
+  background-color: #32425c;
+}
+
+
+
+/* ========================================
+   $MAIN-NAV
+   ======================================== */
+.main-nav {
+  padding: 0 20px;
+  color: #fff;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+
+
+/* ========================================
+   $SITE-NAV
+   ======================================== */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 18px 30px;
+  padding-bottom: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  background-color: #293449;
+}
+
+.site-nav__link:active {
+  background-color: #1d2739;
+}
+
+.site-nav__link--active:hover,
+.site-nav__link--active:focus,
+.site-nav__link--active:active {
+  background-color: #32425c;
+  cursor: default;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.site-nav__link:active .site-nav__text {
+  opacity: 0.5;
+}
+
+.site-nav__link--active:active .site-nav__text {
+  opacity: 1;
+}
+
+
+
+
+/* font-family: "PT Sans", sans-serif; */
+
+/* ========================================
+   $TEST!
+   ======================================== */
+.test {
+  background-color: rgba(0, 128, 0, 0.2) !important;
+  box-shadow: 0 0 0 1px green !important;
+}
+
+.test-2 {
+  background-color: rgba(234, 255, 45, 0.2) !important;
+  box-shadow: inset 0 0 0 1px rgb(234, 255, 45) !important;
+}
+
+.test-3 {
+  background-color: rgba(255, 45, 82, 0.2) !important;
+  box-shadow: 0 0 0 1px rgb(255, 45, 82) !important;
+}
+/* ==================== TEST! end ==================== */
