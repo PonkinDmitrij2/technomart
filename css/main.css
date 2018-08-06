@@ -736,6 +736,104 @@ ul.row {
 
 
 
+/* ========================================
+   $FEATURES
+   ======================================== */
+.features {
+  
+}
+
+.features__row {
+  margin-bottom: 20px;
+}
+
+.feature {
+  position: relative;
+  padding: 22px;
+  padding-top: 20px;
+  padding-right: 115px;
+  color: #fff;
+}
+
+.feature::after {
+  content: "";
+  position: absolute;
+}
+
+.feature__item {
+  margin-bottom: 20px;
+}
+
+.feature--materials {
+  background-color: #ffbf47;
+}
+
+.feature--materials::after {
+  top: 30px;
+  right: 43px;
+  width: 44px;
+  height: 65px;
+  background: url("../img/bg/icon-1.svg") 0 0 no-repeat;
+}
+
+.feature--tools {
+  background-color: #3bbce3;
+}
+
+.feature--tools::after {
+  top: 32px;
+  right: 28px;
+  width: 75px;
+  height: 61px;
+  background: url("../img/bg/icon-2.svg") 0 0 no-repeat;
+}
+
+.feature--machines {
+  background-color: #dc91d8;
+}
+
+.feature--machines::after {
+  top: 30px;
+  right: 31px;
+  width: 78px;
+  height: 62px;
+  background: url("../img/bg/icon-3.svg") 0 0 no-repeat;
+}
+
+.feature--discount {
+  background-color: #8ed78f;
+}
+
+.feature--discount::after {
+  top: 26px;
+  right: 45px;
+  width: 59px;
+  height: 72px;
+  background: url("../img/bg/icon-4.svg") 0 0 no-repeat;
+}
+
+.feature--delivery {
+  background-color: #ffc047;
+}
+
+.feature--delivery::after {
+  top: 33px;
+  right: 31px;
+  width: 78px;
+  height: 63px;
+  background: url("../img/bg/icon-5.svg") 0 0 no-repeat;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+
+
 
 /* font-family: "PT Sans", sans-serif; */
 
@@ -743,17 +841,17 @@ ul.row {
    $TEST!
    ======================================== */
 .test {
-  background-color: rgba(0, 128, 0, 0.2) !important;
+  background-color: rgba(0, 128, 0, 0.1) !important;
   box-shadow: 0 0 0 1px green !important;
 }
 
 .test-2 {
-  background-color: rgba(234, 255, 45, 0.2) !important;
+  background-color: rgba(234, 255, 45, 0.1) !important;
   box-shadow: inset 0 0 0 1px rgb(234, 255, 45) !important;
 }
 
 .test-3 {
-  background-color: rgba(255, 45, 82, 0.2) !important;
+  background-color: rgba(255, 45, 82, 0.1) !important;
   box-shadow: 0 0 0 1px rgb(255, 45, 82) !important;
 }
 /* ==================== TEST! end ==================== */
