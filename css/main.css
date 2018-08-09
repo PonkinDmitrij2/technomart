@@ -88,7 +88,7 @@ ul.row {
   text-decoration: none;
   cursor: pointer;
   border-radius: 3px;
-  transition: background 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .btn:hover, .btn:focus {
