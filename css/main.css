@@ -875,6 +875,7 @@ ul.row {
   height: 100%;
   opacity: 0;
   transition: opacity 1s;
+  overflow: auto;
 }
 
 .carousel__item-1 {
