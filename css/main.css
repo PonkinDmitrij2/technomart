@@ -91,7 +91,8 @@ ul.row {
   transition: 0.2s linear;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #ca2c37;
   border-color: #ca2c37;
 }
@@ -102,13 +103,22 @@ ul.row {
 }
 
 .btn--transparent {
-  color: #48974c;
+  border: 1.0px solid #e5e5e5;
+  font: 13px/18px "PT Sans", Arial, sans-serif;
+  color: #000;
   background-color: transparent;
 }
 
 .btn--transparent:hover,
 .btn--transparent:focus {
-  color: #ffffff;
+  color: #000;
+  background-color: transparent;
+  border: 1.0px solid #bdc6ca;
+}
+
+.btn--transparent:active {
+  background-color: transparent;
+  border: 1.0px solid #ee3643;
 }
 
 
