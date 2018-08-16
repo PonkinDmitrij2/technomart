@@ -750,7 +750,7 @@ ul.row {
    $FEATURES
    ======================================== */
 .features {
-  
+  margin-bottom: 54px;
 }
 
 .features__row {
@@ -1007,6 +1007,223 @@ ul.row {
 .carousel__indicator--active {
   cursor: default;
 }
+
+
+
+/* ========================================
+   $POPULAR-GOODS
+   ======================================== */
+.popular-goods {
+  margin-bottom: 22px;
+}
+
+
+
+/* ========================================
+   $HEADING
+   ======================================== */
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px;
+  padding-left: 27px;
+  background-color: #f9f5f0;
+}
+
+.heading__title {
+  max-width: 66%;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.heading__more-link {
+  width: 28.5%;
+}
+
+
+
+.popular-goods__heading {
+  margin-bottom: 20px;
+}
+
+
+
+/* ========================================
+   $PRODUCT
+   ======================================== */
+.product {
+  position: relative;
+  padding-bottom: 18px;
+  border: 1px solid #e5e5e5;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #fff;
+  transition: box-shadow 0.1s linear;
+}
+
+.product__flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 20;
+  width: 60px;
+  height: 59px;
+  overflow: hidden;
+}
+
+.product__flag--new {
+  background: url("../img/bg/new-flag.png") 0 0 no-repeat;
+}
+
+.product__photo {
+  position: relative;
+  padding-bottom: 77.1%;
+  margin-bottom: 12px;
+}
+
+.product__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.product__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.product__buy {
+  position: relative;
+  width: 136px;
+  margin-bottom: 7px;
+  padding-left: 35px;
+  font: 14px/18px "Cuprum", Arial, sans-serif;
+  border-color: #63a63e;
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.product__buy::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/bg/icon-cart.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.product__buy:hover,
+.product__buy:focus {
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+}
+
+.product__buy:active {
+  border-color: #518534;
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.product__buy:hover::before,
+.product__buy:focus::before,
+.product__buy:active::before {
+  opacity: 1;
+}
+
+.product__bookmark {
+  width: 136px;
+  padding: 7px 30px;
+  border: 3px solid #63a63e;
+  font: 14px/18px "Cuprum", Arial, sans-serif;
+  color: #32425c;
+}
+
+.product__bookmark:hover,
+.product__bookmark:focus {
+  border: 3px solid #32425c;
+}
+
+.product__bookmark:active {
+  opacity: 0.3;
+}
+
+.product__title {
+  min-height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.product__link {
+  display: block;
+  padding: 0 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product__discount {
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.product__price {
+  position: relative;
+  width: 140px;
+  margin: 0 auto;
+  padding: 9px 20px;
+  color: #fff;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.product__price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 0;
+  height: 0;
+  border: 19px solid #fff;
+  border-left-color: #ee3643;
+}
+
+.product:hover {
+  border-color: transparent;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.product:hover .product__overlay {
+  transform: scale(1);
+}
+
 
 
 
